@@ -1,0 +1,9 @@
+1 - copy Plugin.dlm into C:/Program Files/Autodesk/3Ds Max 2011/Plugins
+
+2 - launch 3ds Max
+
+3 - make some geometry
+
+4 - apply the "PLUGIN" modifier to the geometry from the modifiers dropdown
+
+5 - voila, half the faces of each object are deleted while the modifier is active.

@@ -1,0 +1,53 @@
+<div class="details">
+    <h1>Frances Bardsley Girls School<p> Low-budget animatic to accompany a design proposal.</p></h1>
+    <br />
+    
+</div>
+<div class="content">
+
+    <table class="contentTable" width="1060px">
+        <tr>
+            <td width="40px">
+                <a class="Prev browse left"></a>
+            </td>
+            <td>
+                <div class="prevnext">
+                    <div class="centered">
+                        <div class="navi" id="Navi"></div>
+                    </div>
+                </div>
+                <div id="theScrollable" class="piscrollable">   
+                   <div class="items">
+                      <div>
+                          <h1> 1/1 - Frances Bardsley Girls School, Romford (Animatic) </h1>
+                          <div id="fbprplayer">
+                            You need Flash player 8+ and JavaScript enabled to view this video.
+                          </div>
+                      </div>
+                   </div>
+                </div>
+            </td>
+            <td width="40px">
+                <a class="Next browse right"></a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+    var params = { allowScriptAccess: "always" };
+	var fbatts = { id: "fbprytplayer" };
+    swfobject.embedSWF("http://www.youtube.com/v/Ur-CrwQL1sI?enablejsapi=1&playerapiid=fbprplayerapiid&allowFullScreen=true&version=3", "fbprplayer", "970", "650", "8", null, null, params, fbatts);
+</script>
+<script>
+$(document).ready(function() {
+	$("#theScrollable").scrollable({circular: false, autoplay: false, speed:900, easing:"swing", next:".Next", prev:".Prev"}).navigator({ navi: '#Navi' });
+	$('.displayed').axzoomer({
+				'maxZoom':3,
+				'zoomIn':'img/zoom-in.png',
+				'zoomOut':'img/zoom-out.png',
+				'opacity':0.5,
+				'sensivity':10
+			});
+});
+</script>

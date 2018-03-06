@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Network>
+  <NetInfo>
+    <Title>MyNetwork</Title>
+    <Description>my description</Description>
+    <Author>
+    </Author>
+  </NetInfo>
+  <NetNodes>
+    <NetNode>
+      <Name>Birmingham</Name>
+      <HorizontalPosition>500</HorizontalPosition>
+      <VerticalPosition>300</VerticalPosition>
+      <TrafficIn>265656565</TrafficIn>
+      <TrafficOut>234431</TrafficOut>
+      <Population>25</Population>
+    </NetNode>
+    <NetNode>
+      <Name>none</Name>
+      <HorizontalPosition>980</HorizontalPosition>
+      <VerticalPosition>98</VerticalPosition>
+      <TrafficIn>986877</TrafficIn>
+      <TrafficOut>6576</TrafficOut>
+      <Population>65</Population>
+    </NetNode>
+  </NetNodes>
+  <AvailableLineTypes>
+    <LineType>
+      <Reference>215</Reference>
+      <Provider>me</Provider>
+      <FixedCost>32982</FixedCost>
+      <VariableCost1>978</VariableCost1>
+      <VariableCost2>87</VariableCost2>
+      <Distance>65</Distance>
+      <Linespeed>765</Linespeed>
+    </LineType>
+  </AvailableLineTypes>
+</Network>

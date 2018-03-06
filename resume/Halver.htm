@@ -1,0 +1,98 @@
+<div class="details">
+    <h7>Halver plugin</h7><h8>
+      <p>My BSc dissertation project comparing CASE with IDE tools. <br />
+      Developed twice - once as automated code generation (UML), and once as an IDE project - for comparison of the productivity.<br /><br />
+    My role: <br /><br />
+    - Project concept<br /><br />
+    - Sole developer<br /><br />
+    - Project management</p>
+    </h8>    
+    <table style="z-index:10000">
+        <tr><td>Download</td><td>Size</td></tr>
+        <tr><td><a style="text-decoration:underline" href="../portfolio/cpp/Halver (Max 2011 x64).zip">Halver Max2011 (64 bit)</a></td><td>11KB</td></tr>
+        <tr><td><a style="text-decoration:underline" href="../portfolio/cpp/Halver (Max 2012 x64)/Halver (Max 2012 x64).zip">Halver Max2012 (64 bit)</a></td><td>11KB</td></tr>
+        </table>
+</div>
+    
+</div>
+<div class="content">
+
+    <table class="contentTable" width="1060px">
+        <tr>
+            <td width="40px">
+                <a class="Prev browse left"></a>
+            </td>
+            <td>
+                <div class="prevnext">
+                    <div class="centered">
+                        <div class="navi" id="Navi"></div>
+                    </div>
+                </div>
+                <div id="theScrollable" class="piscrollable">   
+                   <div class="items">
+                   <!-- Images go here -->
+                      <div>
+                         <h5> 1/6 - The finished product - before applying modifier</h5>
+                        <img class="displayed" src="img/halver/Illustration-Before01.png" width="970" height="527" />
+                      </div>
+                      <div>
+                         <h5> 2/6 - The finished product - after applying modifier </h5>
+                         <img class="displayed" src="img/halver/Illustration-After01.png" width="970" height="527" />
+                      </div>
+                      <div>
+                         <h5> 3/6 - First project plan </h5>
+                        <img class="displayed" src="img/halver/InterimReportGantt.png" width="970" height="686" />
+                      </div>
+                      <div>
+                         <h5> 4/6 - The 3ds max geometry modifier plugin pipeline </h5>
+                         <img class="displayed" src="img/halver/MaxGeometryPipeline.png" width="268" height="400" />
+                      </div>
+                      <div>
+                         <h5> 5/6 - Minimum class requirements </h5>
+                         <img class="displayed" src="img/halver/OOPluginClassHierarchy.png" width="970" height="676" />
+                      </div>
+                      <div>
+                         <h5> 6/7 - UML diagram for IDE reference </h5>
+                         <img class="displayed" src="img/halver/ilustration03.png" width="970" height="673" />
+                      </div>
+                      <div>
+                         <h5> 7/7 - UML diagram for 100% automatic code generation </h5>
+                        <img class="displayed" src="img/halver/Class Model.png" width="964" height="632" />
+                      </div>
+                      <div>
+                         <h5> 8/7 - code generation </h5>
+                        <img class="displayed" src="img/halver/ilustration02.png" width="475" height="670" />
+                      </div>
+                      <div>
+                         <h5> 8/8 - How the project actually ran as a cfd... </h5>
+                        <img class="displayed" src="img/halver/CFD_02.png" width="600" height="371" />
+                      </div>
+                      <div>
+                         <h5> 9/9 - ...and as a Gantt </h5>
+                        <img class="displayed" src="img/halver/FinalGantt.png" width="970" height="636" />
+                      </div>
+                      <div>
+                         <h5> 10/10 - The final product</h5>
+                        <img class="displayed" src="img/halver/Illustration-After01.png" width="970" height="525" />
+                      </div>
+                   </div>
+                </div>
+            </td>
+            <td width="40px">
+                <a class="Next browse right"></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+$(document).ready(function() {
+	$("#theScrollable").scrollable({circular: false, autoplay: false, speed:900, easing:"swing", next:".Next", prev:".Prev"}).navigator({ navi: '#Navi' });
+});
+$('.displayed').axzoomer({
+				'maxZoom':3,
+				'zoomIn':'img/zoom-in.png',
+				'zoomOut':'img/zoom-out.png',
+				'opacity':0.5,
+				'sensivity':10
+			});
+</script>
