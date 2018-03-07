@@ -1,0 +1,62 @@
+<div class="details">
+    <h1>telent Technology Services<p> </p></h1>
+    <br />
+    
+</div>
+<div class="content">
+
+    <table class="contentTable" width="1060px">
+        <tr>
+            <td width="40px">
+                <a class="Prev browse left"></a>
+            </td>
+            <td>
+                <div class="prevnext">
+                    <div class="centered">
+                        <div class="navi" id="Navi"></div>
+                    </div>
+                </div>
+                <div id="theScrollable" class="piscrollable">   
+                   <div class="items">
+                   <!-- SJAC -->
+                      <div>
+                        <h5> 1/5 - telent Technology Services, Octopus Deploy demo </h5>
+                         <img class="displayed" src="img/portfolio/telent/octopusdemo.jpg" width="485" height="670" />
+                      </div>
+                      <div>
+                        <h5> 2/5 - telent Technology Services, Network Operating Center demo </h5>
+                         <img class="displayed" src="img/portfolio/telent/NOCdemo.jpg" width="970" height="728" />
+                      </div>
+                      <div>
+                        <h5> 3/5 - telent Technology Services, build radiator demo </h5>
+                         <img class="displayed" src="img/portfolio/telent/radiatordemo.jpg" width="485" height="670" />
+                      </div>
+                      <div>
+                        <h5> 4/5 - telent Technology Services, remote telemetry unit demo </h5>
+                         <img class="displayed" src="img/portfolio/telent/rtudemo.jpg" width="485" height="670" />
+                      </div>
+                      <div>
+                        <h5> 5/5 - telent Technology Services, remote telemetry unit demo2 </h5>
+                         <img class="displayed" src="img/portfolio/telent/rtudemo2.jpg" width="485" height="670" />
+                      </div>
+                   </div>
+                </div>
+            </td>
+            <td width="40px">
+                <a class="Next browse right"></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+$(document).ready(function() {
+	$("#theScrollable").scrollable({circular: false, autoplay: false, speed:900, easing:"swing", next:".Next", prev:".Prev"}).navigator({ navi: '#Navi' });
+	$('.displayed').axzoomer({
+				'maxZoom':3,
+				'zoomIn':'img/zoom-in.png',
+				'zoomOut':'img/zoom-out.png',
+				'opacity':0.5,
+				'sensivity':10
+			});
+});
+</script>
