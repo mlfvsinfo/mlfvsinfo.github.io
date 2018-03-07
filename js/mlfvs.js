@@ -28,7 +28,7 @@ function ConfigureCollapsiblePanel() {
     // Assign a call to CollapsibleContainerTitleOnClick for the click event of the new title div.
     $(".collapsibleContainerTitle", this).click(CollapsibleContainerTitleOnClick);
 	
-	$(".collapsibleContainerContent", $(this).parent()).slideUp();
+	$(".collapsibleContainerContent", $(this).parent()).slideDown();
 }
 
 function ConfigureCollapsiblePanel2() {
