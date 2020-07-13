@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<updateDescriptor baseUrl="">
-  <entry targetMediaFileId="55" updatableVersionMin="" updatableVersionMax="" fileName="s4s_linux_1.deb" newVersion="1" newMediaFileId="55" fileSize="11733910" bundledJre="" archive="true">
-    <comment language="en" />
-  </entry>
-</updateDescriptor>
-
