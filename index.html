@@ -1,150 +1,459 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>MLFVS</title>
-<link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" type="text/css" href="./css/mlfvs.min.css"/>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>mlfvs.info ltd</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.1/swfobject.js" type="text/javascript" ></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-<script src="scripts/jquery.tools.min.js"></script>
-<script src="js/mlfvs.js"></script> 
-<script src="scripts/setup.js"></script> 
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<script type="text/javascript">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25198820-3']);
-  _gaq.push(['_trackPageview']);
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background: white;
+            padding-top: 15rem;
+            padding-bottom: 12rem;
+        }
+     </style> 
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-</script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
-<body  onload="setup()">
-	<div id="wrapper">
-		<div id="wrapperBackground" style="position: absolute;left: 50%;width: 970px;height: 100%;background-color: white;margin-left: -485px;">
-			<div class="sidebar">
-					<div id="projectMap" class="sidebarSub">
-							<p> <a href="http://g.co/maps/sydxn"> Project Map </a> </p>
-						<iframe width="194" height="235" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps/ms?msa=0&amp;msid=206766698744113797124.0004bdf465c7be425c627&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=55.028022,-4.746094&amp;spn=12.620238,16.787109&amp;z=4&amp;output=embed"></iframe><br />
-					</div>
-					<div id="twitter feed" class="sidebarSub">
-							<p> <a class="twitter-timeline" href="https://twitter.com/MatthewMLFVS?ref_src=twsrc%5Etfw">Tweets</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </p>
-					</div>
-					<div id="socmedLinks" class="sidebarSub">
-							<p> <a href="http://g.co/maps/sydxn"> Social </a> </p>
-						<iframe width="194" height="235" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps/ms?msa=0&amp;msid=206766698744113797124.0004bdf465c7be425c627&amp;hl=en&amp;ie=UTF8&amp;t=m&amp;ll=55.028022,-4.746094&amp;spn=12.620238,16.787109&amp;z=4&amp;output=embed"></iframe><br />
-					</div>
-			 </div>
-		</div>
-		
-		<div id="page">
-				<div class="page_centered">
-					<div id="header_centered">
-						<div class="images">
-							<div><img src="img/slider/1.jpg" width="970px" height="200px" /></div>
-							<div><img src="img/slider/2.jpg" width="970px" height="200px" /></div>
-							<div><img src="img/slider/3.jpg" width="970px" height="200px" /></div>
-							<div><img src="img/slider/4.jpg" width="970px" height="200px" /></div>
-						</div>
 
-						<!-- the tabs -->
-						<div class="slidetabs">
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-							<a href="#"></a>
-						</div>
-						<img src="img/page_top_vis_wband.png" alt="" class="header_centered_title"/>
-					</div>
+<body id="top">
 
-					<div id="news" class="news">
-						<div class="tabContainer1" showTitle="About me">
-							<p class="tab_text">
-								Working on world-class solutions is what I do best. Engineering software, infrastructure, and process, and a high-end technology professional for over fifteen years, I've enjoyed delivering solutions to national telecoms providers and others. I'm driven by seeing great ideas reach customers faster, more reliably, and with better insight. Expert with languages, tooling, automation, and principles, I actively maintain my skillset and strive for excellence at all times.						</p>
-						</div>
-                        
-                        <div class="tabContainer" showTitle="Kainos / Registers of Scotland">
-							<p class="tab_text">
-								National-scale business-centric monitoring for decision makers.
-							</p>
-							<div rel="#overlay" href="Kainos-RoS.htm" class="portfolioItem"><img src="img/portfolio/Kainos-RoS/sml/sample 1.jpg" /></div>
-							<div rel="#overlay" href="Kainos-RoS.htm" class="portfolioItem"><img src="img/portfolio/Kainos-RoS/sml/screenshotlive.jpg" /></div> 
-						</div>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-						<div class="tabContainer" showTitle="telent">
-							<p class="tab_text">
-								telent Technology Services - National Rail Praesum SCADA
-							</p>
-							<div rel="#overlay" href="telentTechnologyServices.htm" class="portfolioItem"><img src="img/portfolio/telent/sml/NOCdemo.jpg" /></div>
-							<div rel="#overlay" href="telentTechnologyServices.htm" class="portfolioItem"><img src="img/portfolio/telent/sml/octopusdemo.jpg" /></div>
-							<div rel="#overlay" href="telentTechnologyServices.htm" class="portfolioItem"><img src="img/portfolio/telent/sml/radiatordemo.png" /></div>
-							<div rel="#overlay" href="telentTechnologyServices.htm" class="portfolioItem"><img src="img/portfolio/telent/sml/rtudemo.jpg" /></div>
-							<div rel="#overlay" href="telentTechnologyServices.htm" class="portfolioItem"><img src="img/portfolio/telent/sml/rtudemo2.jpg" /></div>
-						</div>
-                        
-						<div class="tabContainer" showTitle="Unitool.info">
-							<p class="tab_text">
-								Expert system for Universities
-							</p>
-                            <div rel="#overlay" href="unitool.htm" class="portfolioItem"><img src="img/portfolio/php/sml/DegreeCalculator_2011-09-23.png" /></div>
-							
-						</div>
-					</div>
-				</div>
-			<div id="push">
-			</div>
-			<div class="simple_overlay" id="contactUs">
-				<div class="details">
-					<h2>Contact Us</h2><br /><br />
-					<h3>07816 426 797</h3><br /><br />
-					<p>matthew@mlfvs.info</p>
-				</div>
-			</div>
-		</div> <!-- end of page-->
-	</div> <!-- end of wrapper -->
-	<div id="footer">
-		<div class="container">
-			<div class="box">
-				<div class="content">
-					<h4>About us</h4>
-					<p>MLFVS.info is the official website of mlfvs.info ltd, a Company Registered at 44 Leicester Street, Wolverhampton, United Kingdom, WV6 0PR in England and Wales. Registration number 10939733. </p>
-				</div>
-			</div>
-			<div class="box">
-				<div class="content">
-					<h4>Terms</h4>
-				</div>
-			</div>
-			<div class="box">
-				<div class="content">
-					<h4>Pages</h4>
-					<ul>
-						<li class="contact"><a href="" rel="#contactUs">Contact us</a></li>
-						<!--<li class="blog"><a href="">MyAccount</a></li>-->
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footerline">
-			Copyright © - mlfvs.info
-		</div>
-	</div>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/mlfvsLogo.png" alt="Homepage">
+            </a>
+        </div>
 
-	<div class="largeOverlay" id="overlay">
-	  <div class="contentWrap"></div>
-	</div>
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a href="#works" title="projects">Recent Works</a></li>
+                    <li><a href="#contact" title="contact">Contact</a></li>
+                </ul>
+    
+                <p></p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://github.com/mlfvsinfo"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/MatthewMLFVS"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mlfvs.info/?hl=en"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/matthew-linton-ford"><i class="fa fa-linkedin" ></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/matthewlinton-"><i class="fa fa-behance"></i></a>
+                    </li>
+                    
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/contact-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>Welcome to mlfvs.info</h1>
+
+                <h3> About me</h3>
+                <h4>Working on world-class devops solutions is what I do best. Engineering software, infrastructure, and process, and a high-end technology professional for over fifteen years, I've enjoyed five years delivering devops solutions to national telecoms providers and others. I'm driven by seeing great ideas reach customers faster, more reliably, and with better insight. Expert with devops tooling, automation, and principles, I actively maintain my skillset and strive for excellence at all times.                    </h4>
+<div id="home_content__buttons"></a>
+          <a href="#works" class="smoothscroll btn btn--stroke">
+            Recent Works
+          </a>
+        
+        </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#works" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://github.com/mlfvsinfo"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a> 
+            </li>
+            <li>
+                <a href="https://twitter.com/MatthewMLFVS"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li> 
+            <li>
+                <a href="https://www.instagram.com/mlfvs.info/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/matthew-linton-ford"><i class="fa fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/matthewlinton-"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">Recent Works</h3>
+                    <h1 class="display-2 display-2--light">We love what we do, check out some of our latest works</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/Kainos-RoS/sample1.jpg" class="thumb-link" title="Kainos / Registers of Scotland" data-size="1050x700">
+                                    <img src="images/portfolio/Kainos-RoS/sml/sample1.jpg" 
+                                         srcset="images/portfolio/Kainos-RoS/sample1.jpg 1x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Kainos / Registers of Scotland
+                                </h3>
+                                <p class="item-folio__cat">
+                                    National-scale business-centric monitoring for decision makers.
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/gallery/100614305/Kainos-Registers-of-Scotland" class="item-folio__project-link" title="View this project on behance">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Kainos / RoS Monitoring capability for live services.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/telent/octopusdemo.jpg" class="thumb-link" title="OctopusDeploy" data-size="1050x700">
+                                    <img src="images/portfolio/telent/sml/octopusdemo.jpg" 
+                                         srcset="images/portfolio/telent/octopusdemo.jpg" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    telent Technology Services
+                                </h3>
+                                <p class="item-folio__cat">
+                                    National Rail SCADA
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/gallery/100615001/telent-Technology-Services" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p></p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    <div class="masonry__brick" data-aos="fade-up">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/portfolio/php/DegreeCalculator_2011-09-23.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                    <img src="images/portfolio/php/sml/DegreeCalculator_2011-09-23.png"
+                                         srcset="images/portfolio/php/DegreeCalculator_2011-09-23.png" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Unitool
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Web Development
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p></p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+    
+                    
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end works-content -->
+
+    </section> <!-- end s-works -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Contact Us</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project or just say hello</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            44 Leicester Street<br>
+                            Wolverhampton<br>
+                            WV6 0PR
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            matthew@mlfvs.info<br>
+                            info@mlfvs.info
+                        </p>
+                    </div>
+
+                    <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+44) 7816 426 797<br>
+                            Skype: matthew.linton.ford<br>
+                            WhatsApp: (+44) 7816 426 797<br>
+                        </p>
+                    </div>
+
+                    <ul class="contact-social">
+                            <li>
+                                <a href="https://github.com/mlfvsinfo"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/MatthewMLFVS"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/mlfvs.info/?hl=en"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/matthew-linton-ford"><i class="fa fa-linkedin" ></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/matthewlinton-"><i class="fa fa-behance"></i></a>
+                            </li>
+                            
+                        </ul>
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+                mlfvs.info is the official website of mlfvs.info ltd, a Company Registered at 44 Leicester Street, Wolverhampton, United Kingdom, WV6 0PR in England and Wales. Registration number 10939733.
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright mlfvs.info ltd 2020</span> 	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-<script type="text/javascript">
-	google.load("swfobject", "2.1");
-</script>
+
 </html>
